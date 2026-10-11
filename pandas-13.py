@@ -1,11 +1,11 @@
-import streamlit as st
-
 import pandas as pd
 
 titanic = pd.read_csv("titanic.csv")
 
 ages_sex = titanic[["Age", "Sex"]]
 
-df = ages_sex.head()
+print(ages_sex.head())
 
-df
+print(type(ages_sex))
+
+print(ages_sex.shape)
